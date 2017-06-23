@@ -1,0 +1,83 @@
+<div class="container" style="width: 800px;">
+  <h1 class="d-inline-flex p-2 ml-5 mr-5" style="text-align: center; margin-top: 20px;">Share Major</h1>
+  <a href="/" class="d-inline-flex p-2 ml-5"><h1>홈</h1></a>
+  <a href="/find_index" class="d-inline-flex p-2 ml-5"><h1>Find</h1></a>
+</div>
+
+  <form action="/find_index" method="GET" class="container mt-5" style="width: 800px;">
+       <div class="form-group">
+          <label for="formGroupExampleInput">닉네임</label>
+          <input type="text" name="name" class="form-control" id="formGroupExampleInput">
+       </div>
+       <div class="form-group">
+          <label for="formGroupExampleInput2">제목</label>
+          <input type="text" name="title" class="form-control" id="formGroupExampleInput2">
+       </div>
+      
+      <div class="container d-flex justify-content-end">
+          <!-- 드롭다운 -->
+          <div class="d-inline-flex p-2 mr-5">
+            <button style="height: 40px;" class="btn btn-secondary dropdown-toggle mt-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              분야 선택
+            </button>
+            <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">철학/심리</a>
+              <a class="dropdown-item" href="#">경제/경영</a>
+              <a class="dropdown-item" href="#">컴퓨터</a>
+            </div>
+          </div>
+          
+          <!-- 체크박스 -->
+          <div class="d-inline-flex p-2 mt-4">
+              <div class="form-check form-check-inline mr-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">책
+                </label>
+              </div>
+              <div class="form-check form-check-inline mr-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">사이트
+                </label>
+              </div>
+              <div class="form-check form-check-inline mr-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">자격증
+                </label>
+              </div>
+              <div class="form-check form-check-inline mr-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">대외활동
+                </label>
+              </div>
+              <div class="form-check form-check-inline mr-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">커리큘럼
+                </label>
+              </div>
+              <div class="form-check form-check-inline mr-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">노하우
+                </label>
+              </div>
+          </div>
+      </div>
+      
+      <!-- 내용입력 -->
+      <div class="form-group mt-3">
+          <label for="exampleTextarea">내용</label>
+          <textarea class="form-control" name="content" id="exampleTextarea" rows="15"></textarea>
+      </div>
+      
+      <!-- 파일첨부 -->
+      <div class="container d-flex justify-content-start mt-4">
+            <label for="exampleInputFile" class="p-2 mr-5">파일첨부</label>
+            <input type="file" class="form-control-file p-2" id="exampleInputFile" aria-describedby="fileHelp">
+
+          <!-- 제출버튼 -->
+          <input class="btn btn-primary ml-auto p-2" type="submit" style="height: 40px;" value="올리기">
+      </div>
+      
+      
+      
+  </form>
+</div>
